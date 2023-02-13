@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>RELOJ DIGITAL</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="wrapper">
+        <img src="SRC/clock.svg" alt="clock">
+        <h1>00:00:00 PM</h1>
+        <p id="currentDate"></p>
+        <input type="button" id="open" value="Añadir Alarma">
+        <div id="Botones">
+            <input type="button" value="verde" class="verde" id="cambio_color" onclick="cambio_V()">
+            <input type="button" value="Rojo" class="rojo" id="cambio_color" onclick="cambio_R()">
+            <input type="button" value="Negro" class="negro" id="cambio_color" onclick="cambio_N()">
+            <input type="button" value="Reset" class="reset" id="cambio_color" onclick="cambio_Q()">
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="content">
+                    <div class="column">
+                        <select>
+                            <option value="Horas" selected disabled hidden>Horas</option>
+                        </select>
+                    </div>
+                    <div class="column">
+                        <select>
+                            <option value="Minutos" selected disabled hidden>Minutos</option>
+                        </select>
+                    </div>
+                    <div class="column">
+                        <select>
+                            <option value="AM/PM" selected disabled hidden>AM/PM</option>
+                        </select>
+                    </div>
+                </div>
+                <button>Añadir Alarma</button>
+            </div>
+        </div>
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
